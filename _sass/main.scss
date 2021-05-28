@@ -1,0 +1,380 @@
+// Universal
+
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: visible;
+    z-index: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font__family--normal;
+    font-size: $font__size--normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    @include dual-var(background-color, --color__background--dark, $color__background--light);
+    @include dual-var(color, --color__text--dark, $color__text--light);
+}
+
+::selection {
+    color: $color__primary--hover
+}
+
+.header {
+    font-size: $font__size--header;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: $font__size--h1;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: $font__size--h2;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: $font__size--h3;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: $font__size--normal;
+    font-weight: 400;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+a {
+    @include dual-var(color, --color__text--dark, $color__text--light);
+
+    &:hover {
+        color: $color__primary--hover;
+    }
+}
+
+ul {
+    list-style: square;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+// Preventing broken image symbol when using lazysizes
+img.lazyload:not([src]) {
+    visibility: hidden;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figure > img {
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    @include dual-var(color, --color__gray-text--dark, $color__gray-text--light);
+    font-size: $font__size--small;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    @include dual-var(background-color, --color__gray-background--dark, $color__gray-background--light);
+}
+
+caption {
+    @extend figcaption;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    @include dual-var(background-color, --color__gray-element--dark, $color__gray-element--light);
+}
+
+.footnotes {
+    ol {
+        font-size: $font__size--footnote;
+    }
+
+    p {
+        margin: 5px 0;
+        padding-bottom: 0;
+    }
+}
+
+.reversefootnote {
+    color: $color__primary;
+    text-decoration: none;
+
+    &:hover {
+        color: $color__primary--hover;
+    }
+}
+
+
+// Adjustment for anchor tag positioning with fixed header
+:target {
+    &[id^="fn"] {
+        padding-top: 65px;
+        margin-top: -65px;
+        color: $color__primary;
+
+        a {
+            color: $color__primary;
+        }
+    }
+
+    &:not(div):not([id^="fn"]):before {
+        content: "";
+        display: block;
+        padding-top: 65px;
+        margin-top: -65px;
+    }
+}
+
+
+// Helper classes
+
+.separator {
+    margin-top: 60px;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Hide visually and maintain layout, but not from screen readers
+.transparent {
+    opacity: 0;
+}
+
+// Hide visually and from screen readers, but maintain layout
+// .invisible {
+//     visibility: hidden;
+// }
+
+
+// Hide visually and from screen readers
+// .hidden, [hidden] {
+//     display: none !important;
+// }
+
+// Like display: none; but visible to screen readers
+// .visuallyhidden {
+//     position: absolute;
+//     overflow: hidden;
+//     clip: rect(0 0 0 0);
+//     height: 1px; width: 1px;
+//     margin: -1px; padding: 0; border: 0;
+// }
+
+// +--------------------+----------------+-----------------+
+// | Property           | occupies space | consumes clicks |
+// +--------------------+----------------+-----------------+
+// | opacity: 0         |        ✓       |        ✓        |
+// +--------------------+----------------+-----------------+
+// | visibility: hidden |        ✓       |        ✗        |
+// +--------------------+----------------+-----------------+
+// | display: none      |        ✗       |        ✗        |
+// +--------------------+----------------+-----------------+
+
+
+// Indented boxes
+
+blockquote {
+    border-left-color: $color__gray-element--light;
+    @include indented-box(var(--color__gray-element--dark, $color__gray-element--light));
+
+    p {
+        padding-bottom: 0;
+    }
+
+    &:not([class]) {
+        @include dual-var(color, --color__gray-text--dark, $color__gray-text--light);
+        @include gray-link;
+    }
+}
+
+.hint {
+    border-left-color: $color__blue;
+}
+
+.danger {
+    border-left-color: $color__red;
+}
+
+
+// Main Header
+
+#main-header {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    cursor: default;
+
+    a {
+        text-decoration: none;
+        font-family: 'Black Ops One', 'Source Code Pro', sans-serif;
+        font-size: $font__size--main-header;
+        margin: 0;
+        @include dual-var(color, --color__text--dark, $color__text--light);
+    }
+}
+
+
+// Navigation
+
+#navbar {
+    @include dual-var(background-color, --color__background--dark, $color__background--light);
+    width: 100%;
+    padding: 15px 0;
+    z-index: 10;
+
+    .container {
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#nav-links {
+    overflow: scroll;
+
+    a {
+        color: $color__primary;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        padding: 0 6px;
+        margin-right: 10px;
+        transition: background-color 0.3s ease-in;
+        display: inline-block;
+    }
+
+    a:not(.current):hover {
+        color: #fff;
+        background-color: $color__primary--hover;
+    }
+
+    .current {
+        color: #fff;
+        background-color: $color__primary;
+        cursor: default;
+    }
+}
+
+#nav-btns {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: opacity 0.3s ease-in-out;
+
+    & > * {
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #navbar:hover & {
+        opacity: 1;
+    }
+}
+
+#dark-toggle-box, #dark-toggle-label {
+    display: none;
+}
+
+// Check support for CSS variable
+@supports ( (--a: 0)) {
+    #dark-toggle-label {
+        display: block;
+    }
+}
+
+#dark-toggle-box:checked + #dark-toggle-label {
+    transform: rotate(180deg);
+}
+
+
+// Footer
+
+#main-footer {
+    @include dual-var(color, --color__gray-text--dark, $color__gray-text--light);
+    @include gray-link;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    font-size: $font__size--footnote;
+    font-weight: 300;
+
+    i, .icon {
+        margin-right: 5px;
+    }
+}
+
+#copyleft {
+    transition: opacity 0.15s;
+}
+
+#key:hover:after {
+    display: inline-block;
+    content: attr(aria-label);
+}
+
+
+// Icons if not using Font Awesome Kit
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}

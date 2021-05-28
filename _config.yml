@@ -1,0 +1,52 @@
+permalink: pretty
+sass:
+  style: compressed
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  blanklines: false
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+title: TNghia
+author: Trung-Nghia Nguyen
+tagline: "A minimal theme for blogs"
+description: "Wellcome to my homepage"
+url: ""
+lang: en
+
+# Optional
+# google-tag-manager-id: GTM-xxxxxx
+# font-awesome-kit: xxxxxxxxx  # using Font Awesome Kit instead of defining svg icons
+
+paginate: 5
+
+feed:
+  posts_limit: 10
+
+navigation:
+  - name: About
+    link: /
+  - name: Blog
+    link: /blog/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      category: posts
+      toc: true
+
+exclude:
+  - Gemfile
+  - Rakefile
+  - yarn.lock
+  - pre-commit
+  - /*.json
+  - /*.gemspec
+  - /*.gem

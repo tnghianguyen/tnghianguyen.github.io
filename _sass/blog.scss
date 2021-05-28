@@ -1,0 +1,212 @@
+// Blog
+
+@mixin blog-critical{
+
+.post-meta, .page-meta  {
+    @include dual-var(color, --color__gray-text--dark, $color__gray-text--light);
+    font-size: $font__size--small;
+}
+
+.date{
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.tag{
+    @include gray-link {display: inline-block;};
+    i, .icon {
+        font-size: 80%;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    code {
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+}
+
+
+#blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        .card {
+            padding: 2% 5%;
+            margin: 10px auto;
+        }
+        .post-meta{
+            font-size: $font__size--footnote;
+        }
+        .post-title {
+            color: $color__primary;
+            font-size: $font__size--h2;
+            font-weight: 700;
+        }
+        .post-description {
+            font-size: $font__size--small
+        }
+    }
+
+    a:hover{
+        color: inherit;
+        .card{
+            @include float-card;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .post-title{
+            color: $color__primary--hover;
+        }
+    }
+
+    a:active {
+        .card {
+            margin: 10px auto;
+            box-shadow: none;
+            transition: none;
+        }
+    }
+}
+
+
+#blog-list-mini{
+    padding: 2% 5%;
+    margin: 10px;
+    @include float-card;
+}
+
+@media only screen and (min-width: 1250px) and (min-height: 500px) {
+    #toc {
+        width: 13%;
+        max-width: 250px;
+        max-height: calc(100% - 300px);
+        position: fixed;
+        right: 2%;
+        top: 100px;
+        font-size: $font__size--footnote;
+        @include float-card;
+        padding: 15px;
+        overflow-y: scroll;
+        // https://stackoverflow.com/a/7993098/10365842
+        a {
+            display:inline-block;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: calc(100%);
+        }
+        h2 {
+            font-size: $font__size--normal;
+        }
+        ul {
+            padding-left: 20px;
+            list-style: none;
+        }
+    }
+
+    .active {
+        color: $color__primary;
+    }
+}
+
+}
+
+
+
+@mixin blog-noncritical{
+
+iframe {
+    border: none;
+}
+
+.iframecontainer {
+    height: 0;
+    padding-bottom: 56.25%;
+    width: 100%;
+    position: relative;
+}
+
+.iframecontainer > iframe {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    left: 2.5%;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+
+    &[src*="slides"] {
+        width: 100%;
+        left: 0;
+        box-shadow: none;
+    }
+}
+
+#share-btn{
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: $color__primary;
+    box-shadow: 0 0 10px $color__primary--hover;
+    z-index: 10;
+
+    i, .icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 150%;
+    }
+
+    &:hover{
+        background-color: $color__primary--hover;
+        cursor: pointer;
+    }
+
+    &:active{
+        box-shadow: none;
+    }
+
+    @include phone {
+        right: 30px;
+        &:hover{
+            background-color: $color__primary;
+        }
+    }
+}
+
+.shared:before {
+    content: attr(fallback-text);
+    color: $color__primary;
+    font-size: $font__size--footnote;
+    font-weight: 600;
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    text-align: center;
+    padding: 5px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+    @include dual-var(background-color, --color__gray-backround--dark, #{$color__gray-background--light}80);
+}
+
+.shared:hover:before {
+    opacity: 1;
+}
+
+}
+
