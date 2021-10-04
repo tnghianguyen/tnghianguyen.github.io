@@ -11,7 +11,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-title: TNghia
+title: Trung-Nghia Nguyen
 author: Trung-Nghia Nguyen
 tagline: "A minimal theme for blogs"
 description: "Wellcome to my homepage"
@@ -28,7 +28,7 @@ feed:
   posts_limit: 10
 
 navigation:
-  - name: About
+  - name: Home
     link: /
   - name: Blog
     link: /blog/
