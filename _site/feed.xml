@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-05T10:17:04+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Trung-Nghia Nguyen</title><subtitle>Wellcome to my homepage</subtitle><author><name>Trung-Nghia Nguyen</name></author><entry><title type="html">Example</title><link href="http://localhost:4000/posts/2021/05/21/Example/" rel="alternate" type="text/html" title="Example" /><published>2021-05-21T00:00:00+07:00</published><updated>2021-05-21T00:00:00+07:00</updated><id>http://localhost:4000/posts/2021/05/21/Example</id><content type="html" xml:base="http://localhost:4000/posts/2021/05/21/Example/">&lt;h1 id=&quot;section-one&quot;&gt;Section One&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-05T10:30:31+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Trung-Nghia Nguyen</title><subtitle>Wellcome to my homepage</subtitle><author><name>Trung-Nghia Nguyen</name></author><entry><title type="html">Example</title><link href="http://localhost:4000/posts/2021/05/21/Example/" rel="alternate" type="text/html" title="Example" /><published>2021-05-21T00:00:00+07:00</published><updated>2021-05-21T00:00:00+07:00</updated><id>http://localhost:4000/posts/2021/05/21/Example</id><content type="html" xml:base="http://localhost:4000/posts/2021/05/21/Example/">&lt;h1 id=&quot;section-one&quot;&gt;Section One&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -118,7 +118,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 &lt;h1 id=&quot;details&quot;&gt;Details&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Organizers: Do Hoang Viet and Nguyen Trung Nghia;&lt;/li&gt;
+  &lt;li&gt;Organizers: Trung-Nghia Nguyen and Hoang-Viet Do;&lt;/li&gt;
   &lt;li&gt;12:30-16:30 on Wednesdays, Spring 2021;&lt;/li&gt;
   &lt;li&gt;Place: Room H2.2 - VNUHCM-University of Science.&lt;/li&gt;
 &lt;/ul&gt;
@@ -127,7 +127,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 
 &lt;h1 id=&quot;schedule&quot;&gt;Schedule&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(March 17)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt;, &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;, and &lt;strong&gt;Nguyen Trung Nghia&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(March 17)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt;, &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;, and &lt;strong&gt;Trung-Nghia Nguyen&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Algebras and modules over algebras&lt;/li&gt;
       &lt;li&gt;Schur’s Lemma and Maschke’s Theorem&lt;/li&gt;
@@ -135,7 +135,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
       &lt;li&gt;Representations of finite groups&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(March 24)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(March 24)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;One-to-one correspondence between representations of finite groups and \(FG\)-modules&lt;/li&gt;
       &lt;li&gt;Class functions and (irreducible) complex characters&lt;/li&gt;
@@ -143,42 +143,42 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
       &lt;li&gt;First orthogonality relation&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(March 31)&lt;/em&gt; &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(March 31)&lt;/em&gt; &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Inner product of class functions&lt;/li&gt;
       &lt;li&gt;Second orthogonality relation&lt;/li&gt;
       &lt;li&gt;Connections between irreducible characters of a finite group and its quotient groups&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(April 7)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(April 7)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;The commutator groups and the number of linear irreducible characters&lt;/li&gt;
       &lt;li&gt;Connections between the center of a group and the center of characters&lt;/li&gt;
       &lt;li&gt;Algebraic integers and their basic properties&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(April 14)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(April 14)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Burnside’s Theorem and the solvability of groups of order \(p^aq^b\)&lt;/li&gt;
       &lt;li&gt;The integrality of the values of characters&lt;/li&gt;
       &lt;li&gt;Study integral group bases and Glauberman’s Theorem&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(April 21)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(April 21)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Tensor products of modules over an arbitrary (non-commutative) ring&lt;/li&gt;
       &lt;li&gt;Tensor products of \(\mathbb{C}G\)-modules and products of characters&lt;/li&gt;
       &lt;li&gt;Real characters and Frobenius-Schur Theorem&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(April 28)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt;, &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;, and &lt;strong&gt;Nguyen Trung Nghia&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(April 28)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt;, &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;, and &lt;strong&gt;Trung-Nghia Nguyen&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;[Linear algebra] Spectral theorem of normal (complex) matrices&lt;/li&gt;
       &lt;li&gt;Classification of irreducible characters based on the indicator&lt;/li&gt;
       &lt;li&gt;Characters corresponding to direct products&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(May 5)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(May 5)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Induced class functions and Frobenius Reciprocity&lt;/li&gt;
       &lt;li&gt;Imprimitimitivity decomposition of \(FG\)-modules&lt;/li&gt;
@@ -186,14 +186,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
       &lt;li&gt;Taketa’s Theorem on the solvability of \(M\)-groups&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(May 12)&lt;/em&gt; &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(May 12)&lt;/em&gt; &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Permutation characters and doubly transitive actions&lt;/li&gt;
       &lt;li&gt;Brauer’s Theorem on proper subgroups of a group&lt;/li&gt;
       &lt;li&gt;Artin’s Theorem on rational-valued characters&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(May 19)&lt;/em&gt; (online via GMeet) &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(May 19)&lt;/em&gt; (online via GMeet) &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Conjugates of characters and Clifford’s Theorem&lt;/li&gt;
       &lt;li&gt;Conjugates of representations and Clifford’s Theorem&lt;/li&gt;
@@ -201,14 +201,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
       &lt;li&gt;Ito’s Theorem on divisibility of index of an abelian group by every degree of irreducible characters&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(May 26)&lt;/em&gt; (online via GMeet) &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(May 26)&lt;/em&gt; (online via GMeet) &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Gallagher’s Theorem&lt;/li&gt;
       &lt;li&gt;The restriction of an irreducible character to a normal subgroup of prime index&lt;/li&gt;
       &lt;li&gt;Necessary and sufficient condition of extendibility of characters&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(June 2)&lt;/em&gt; (online via GMeet) &lt;strong&gt;Tran Minh Nguyen&lt;/strong&gt; and &lt;strong&gt;Do Hoang Viet&lt;/strong&gt;
+  &lt;li&gt;&lt;em&gt;(June 2)&lt;/em&gt; (online via GMeet) &lt;strong&gt;Minh-Nguyen Tran&lt;/strong&gt; and &lt;strong&gt;Hoang-Viet Do&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Frobenius Theorem on Frobenius groups&lt;/li&gt;
       &lt;li&gt;Brief about linear isometry maps&lt;/li&gt;
