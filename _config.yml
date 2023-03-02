@@ -11,8 +11,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-title: Trung-Nghia Nguyen
-author: Trung-Nghia Nguyen
+title: Trung Nghia Nguyen
+author: Trung Nghia Nguyen
 tagline: "A minimal theme for blogs"
 description: "Wellcome to my homepage"
 url: ""
