@@ -34,8 +34,6 @@ navigation:
     link: /research/
   - name: Teaching and Outreach
     link: /teaching/
-  - name: Blog
-    link: /blog/
 
 defaults:
   - scope:
