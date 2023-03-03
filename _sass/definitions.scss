@@ -3,9 +3,13 @@
 $color__blue: #2a76dd;
 $color__light-blue: #6ca0e8;
 $color__red: #ff4642;
+$color__light-red: #ff6e6b;
 
-$color__primary: $color__blue;
-$color__primary--hover: $color__light-blue;
+// $color__primary: $color__blue;
+// $color__primary--hover: $color__light-blue;
+
+$color__primary: $color__red;
+$color__primary--hover: $color__light-red;
 
 // Light theme colors
 $color__background--light: #fff;
