@@ -3,6 +3,7 @@ layout: default
 title: About me
 description: This page tells you a little bit about myself.
 clipboard: true
+font-awesome-kit: true
 ---
 
 <h2>About Me</h2>
@@ -15,3 +16,10 @@ clipboard: true
     <li> Email: <strong>tn.nguyen</strong> at <strong>rutgers</strong> dot <strong>edu</strong> </li>
     <li> Office: HLL 605, 110 Frelinghuysen Road, Piscataway, NJ 08854 </li>
 </ul>
+
+<div class="social">
+    <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
+    <!--<a href="{{ site.work_url }}" title="Work"><i class="fas fa-briefcase"></i></a>-->
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+</div>

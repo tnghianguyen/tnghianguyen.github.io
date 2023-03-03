@@ -13,6 +13,10 @@ plugins:
 
 title: Trung Nghia Nguyen
 author: Trung Nghia Nguyen
+email: tn.nguyen@rutgers.edu
+# work_url: https://www.math.rutgers.edu/people/department-directory/detail/344-department-directory/2027-nguyen-trung-nghia
+orcid_id: 0000-0002-2479-5632
+linkedin_username: tnghianguyen
 tagline: "A minimal theme for blogs"
 description: "Wellcome to my homepage"
 url: ""
