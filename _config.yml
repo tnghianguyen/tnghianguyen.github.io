@@ -32,7 +32,7 @@ navigation:
     link: /
   - name: Research
     link: /research/
-  - name: Teaching and Outreach
+  - name: Teaching
     link: /teaching/
 
 defaults:
