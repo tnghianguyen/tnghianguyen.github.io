@@ -1,4 +1,4 @@
-I"<p><em>[Last updated: June 18, 2021]</em></p>
+I"Y<p><em>[Last updated: June 18, 2021]</em></p>
 
 <h1 id="details">Details</h1>
 
@@ -8,7 +8,7 @@
   <li>Place: Room H2.2 - VNUHCM-University of Science.</li>
 </ul>
 
-<p>Our aim is to cover foundational material on the theory of characters of finite groups following by the classical textbook “Character Theory of Finite Groups”<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> by Isaacs. Some material is referred to G. James and M. Liebeck<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> as well.</p>
+<p>Our aim is to cover foundational material on the theory of characters of finite groups following by the classical textbook “Character Theory of Finite Groups”<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> by Isaacs. Some material is referred to G. James and M. Liebeck<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> as well.</p>
 
 <h1 id="schedule">Schedule</h1>
 <ul>
@@ -105,10 +105,10 @@
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1" role="doc-endnote">
+    <li id="fn:1">
       <p>I.M. Isaacs, Character Theory of Finite Groups, AMS-Chelsea, Providence, 2006. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2" role="doc-endnote">
+    <li id="fn:2">
       <p>G. James, M. Liebeck, Representations and Characters of Groups (2nd ed.), Cambridge University Press, 2001. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
