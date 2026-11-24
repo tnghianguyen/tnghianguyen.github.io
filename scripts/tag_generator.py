@@ -22,7 +22,9 @@ tag: tag1, tag2
 """
 
 import glob
+import json
 import os
+import re
 from itertools import takewhile, dropwhile
 from functools import reduce
 
@@ -50,20 +52,30 @@ def all_extracted_tags(post_dir='_posts/'):
     return {i for x in map(extract_tags, glob.glob(post_dir + '*md')) for i in x}
 
 def slugify(string):
-    return string.translate(str.maketrans({' ': '-', '?': '-', '.': '-', '#': '-'})).strip('-')
+    slug = re.sub(r'[^\w-]', '-', string).strip('-')
+    if not slug:
+        raise ValueError('Tag must contain a letter, number, or underscore')
+    return slug
 
 def create_tagpage(tag_dir):
     def wrapped(tag):
-        with open(tag_dir + slugify(tag) + '.md', 'w') as f:
-            f.write('---\nlayout: tagpage\ntitle: "Tag: {0}"\ntag: "{0}"\n---\n'.format(tag))
+        filename = os.path.join(tag_dir, slugify(tag) + '.md')
+        with open(filename, 'w', encoding='utf8') as f:
+            f.write('---\nlayout: tagpage\ntitle: {0}\ntag: {1}\n---\n'.format(
+                json.dumps('Tag: ' + tag), json.dumps(tag)))
     return wrapped
 
 def create_all_tagpages(tags, tag_dir='tags/'):
+    tags = list(tags)
+    # Validate every tag before replacing existing tag pages.
+    for tag in tags:
+        slugify(tag)
     try:
         os.makedirs(tag_dir)
     except FileExistsError:
-        list(map(os.remove, glob.glob(tag_dir + '*md')))
+        list(map(os.remove, glob.glob(os.path.join(tag_dir, '*md'))))
     list(map(create_tagpage(tag_dir), tags))
     print('Extracted tags are {}'.format(tags))
 
-create_all_tagpages(all_extracted_tags())
+if __name__ == '__main__':
+    create_all_tagpages(all_extracted_tags())

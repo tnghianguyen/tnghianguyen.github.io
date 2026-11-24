@@ -49,6 +49,9 @@ defaults:
       toc: true
 
 exclude:
+  - scripts
+  - vendor
+  - node_modules
   - Gemfile
   - Rakefile
   - yarn.lock

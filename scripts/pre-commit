@@ -8,7 +8,7 @@ fi
 
 if git diff --cached --name-only | grep --quiet "_posts/"
 then
-    ./tag_generator.py
+    ./scripts/tag_generator.py
     git diff --name-only | grep "tags/" | xargs git add
     git add tags/*
 fi

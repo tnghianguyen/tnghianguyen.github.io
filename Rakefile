@@ -7,3 +7,8 @@ task :test do
 end
 
 task :default => [:test]
+
+desc "Check locked Ruby dependencies against current security advisories"
+task :security do
+  sh "bundle exec bundler-audit check --update"
+end
