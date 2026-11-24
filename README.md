@@ -1,28 +1,106 @@
-Here is a personal blog built by Jekyll and hosted by Github Pages.
+# Trung Nghia Nguyen — Personal Website
 
-## Technologies used
+Source for my personal academic website, including research, teaching, and
+mathematics posts.
 
-### Bootstrap 4.3.1
-### Jekyll
+**Website:** [www.tnghia.com](https://www.tnghia.com/)
 
-Currently, this site has been almost completed. The posts in the directory are experimental.
+Built with Jekyll, Liquid, and Sass, with MathJax for mathematical notation.
+GitHub Actions builds the site from locked Ruby dependencies and deploys it to
+GitHub Pages.
 
-## Local development and security checks
+## Run locally
 
-Use a supported Ruby release (Ruby 3.3 or newer, with its latest security patches)
-and Bundler 2.6.8. Install the locked dependencies with `bundle install`.
+Use Ruby 3.3, matching the deployment workflow, and Bundler 2.6.8. Python 3 is
+needed only for generating tag pages. Node.js is not required to build the site.
 
-- Build: `bundle exec jekyll build`
-- Preview locally: `bundle exec jekyll serve`
-- Check Ruby dependencies against current advisories: `bundle exec rake security`
-- Generate tag pages: `python3 scripts/tag_generator.py`
+```sh
+git clone https://github.com/tnghianguyen/tnghianguyen.github.io.git
+cd tnghianguyen.github.io
+gem install bundler -v 2.6.8
+bundle _2.6.8_ install
+bundle exec jekyll serve
+```
 
-The Node package only provides command shortcuts; the website has no Node
-dependencies. Unused linting and theme-release tools have been removed. Generated
-site output and local caches should not be committed. GitHub Actions checks the
-Ruby dependencies and builds the site, and Dependabot checks for updates weekly.
+Open [localhost:4000](http://localhost:4000/). Restart the preview server after
+changing `_config.yml`.
 
-Production deployment uses the `Deploy website` GitHub Actions workflow and the
-versions in `Gemfile.lock`. In repository Settings → Pages, the build source must
-be **GitHub Actions**. The built-in Pages Jekyll builder uses its own bundled
-plugins and does not honor this site's locked security updates.
+To create a production build in `_site/`:
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+## Update content
+
+| Location | Purpose |
+| --- | --- |
+| `index.html` | About and contact information |
+| `research.html` | Research, talks, and academic activities |
+| `teaching.html` | Teaching information |
+| `_posts/` | Dated mathematics and seminar posts |
+| `tags/` | Generated tag pages |
+| `_layouts/` and `_includes/` | Shared page templates and components |
+| `_sass/` and `assets/` | Stylesheets and browser scripts |
+| `img/` | Images |
+| `_config.yml` | Site metadata, navigation, and Jekyll settings |
+
+Create posts directly in `_posts/` using `YYYY-MM-DD-title.md` filenames and YAML
+front matter. For example:
+
+```yaml
+---
+layout: post
+title: My mathematics post
+tag: [algebra, geometry]
+mathjax: true
+---
+```
+
+After adding or changing post tags, regenerate the tag pages:
+
+```sh
+python3 scripts/tag_generator.py
+```
+
+This replaces the Markdown files in `tags/`; commit the regenerated pages with
+the posts. Tag generation is not automatic in CI.
+
+The templates load `assets/js/main.min.js`. If editing `assets/js/main.js`, keep
+the minified file in sync. The optional `npm run minify` shortcut requires a
+separately installed Closure Compiler.
+
+## Validate changes
+
+| Command | What it checks |
+| --- | --- |
+| `bundle exec jekyll build` | Generates the website |
+| `bundle exec rake test` | Builds the site and checks HTML, assets, and links |
+| `bundle exec rake security` | Refreshes RubySec advisories and audits locked Ruby dependencies |
+
+Link checks and advisory updates require network access. Commit source files and
+`Gemfile.lock`; generated `_site/` output and local caches are ignored.
+
+## Deployment and security
+
+Pushing to `main` runs the [Deploy website workflow](.github/workflows/pages.yml).
+It audits the dependencies, builds with the versions in `Gemfile.lock`, and
+deploys the resulting static files after a successful build. The workflow can
+also be started manually from the Actions tab on `main`.
+
+In **Settings → Pages → Build and deployment**, keep the source set to
+**GitHub Actions**. This ensures production uses the locked dependencies rather
+than the separate plugin versions bundled with the legacy Pages builder.
+Keep the custom domain configured in **Settings → Pages** and keep `url` in
+`_config.yml` aligned with it.
+
+The [Security and build workflow](.github/workflows/security.yml) audits Ruby
+dependencies and builds the site for pull requests and pushes to `main`.
+[Dependabot](.github/dependabot.yml) checks for dependency and action updates
+weekly. Dependabot alerts, CodeQL, and secret scanning are enabled in the
+repository; current findings are available in the
+[security dashboard](https://github.com/tnghianguyen/tnghianguyen.github.io/security).
+
+## License
+
+See [LICENSE.md](LICENSE.md) for the MIT license.
