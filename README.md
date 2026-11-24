@@ -21,3 +21,8 @@ The Node package only provides command shortcuts; the website has no Node
 dependencies. Unused linting and theme-release tools have been removed. Generated
 site output and local caches should not be committed. GitHub Actions checks the
 Ruby dependencies and builds the site, and Dependabot checks for updates weekly.
+
+Production deployment uses the `Deploy website` GitHub Actions workflow and the
+versions in `Gemfile.lock`. In repository Settings → Pages, the build source must
+be **GitHub Actions**. The built-in Pages Jekyll builder uses its own bundled
+plugins and does not honor this site's locked security updates.
